@@ -50,4 +50,4 @@ hugo server -D
 
 ## Future: replacing cookies
 
-The tracker is designed for easy storage backend swaps. The entire persistence layer lives in `static/js/uptime.js` inside the `Store` object. To migrate to, e.g., `localStorage`, IndexedDB, Supabase, or a serverless API, replace only the `Store.loadChecks`, `Store.saveChecks`, `Store.loadMeta`, `Store.saveMeta`, `Store.addCheck`, and `Store.clear` methods — the rest of the code stays the same.
+The tracker is designed for easy storage backend swaps. The entire persistence layer lives in `static/js/uptime.js` inside the `Store` object. To migrate to, e.g., `localStorage`, IndexedDB, Supabase, or a serverless API, replace only the `Store.loadChecks`, `Store.saveChecks`, `Store.loadMeta`, `Store.saveMeta`, `Store.addCheck`, and `Store.clear` methods - the rest of the code stays the same.
