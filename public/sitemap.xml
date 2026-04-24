@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://manwar.github.io/uptime-tracker/categories/</loc>
+    <loc>https://manwar.github.io/uptime-monitor/categories/</loc>
   </url><url>
-    <loc>https://manwar.github.io/uptime-tracker/tags/</loc>
+    <loc>https://manwar.github.io/uptime-monitor/tags/</loc>
   </url><url>
-    <loc>https://manwar.github.io/uptime-tracker/</loc>
+    <loc>https://manwar.github.io/uptime-monitor/</loc>
   </url>
 </urlset>
