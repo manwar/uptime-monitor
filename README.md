@@ -1,4 +1,4 @@
-# manwar.org — Uptime Monitor
+# manwar.org - Uptime Monitor
 
 A lightweight Hugo static site hosted on GitHub Pages that tracks the uptime of [manwar.org](https://manwar.org) using browser cookies as the data store.
 
