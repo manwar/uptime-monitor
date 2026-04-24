@@ -25,10 +25,10 @@ Edit `hugo.toml`:
 
 ```toml
 [params]
-  targetURL    = "https://manwar.org"   # site to monitor
-  siteName     = "manwar.org"           # display name
-  checkInterval = 60                    # seconds between checks
-  cookieDays   = 90                     # cookie retention
+  targetURL     = "https://manwar.org"   # site to monitor
+  siteName      = "manwar.org"           # display name
+  checkInterval = 60                     # seconds between checks
+  cookieDays    = 90                     # cookie retention
 ```
 
 ## Local development
@@ -41,7 +41,7 @@ hugo server -D
 
 1. Create a new GitHub repository (e.g. `uptime-monitor`)
 2. Push this project to the `main` branch
-3. In repo **Settings → Pages**, set source to **GitHub Actions**
+3. In repo **Settings -> Pages**, set source to **GitHub Actions**
 4. Update `baseURL` in `hugo.toml` to match your Pages URL:
    ```
    https://<your-username>.github.io/uptime-monitor/
