@@ -46,7 +46,7 @@ hugo server -D
    ```
    https://<your-username>.github.io/uptime-monitor/
    ```
-5. Push — the workflow in `.github/workflows/deploy.yml` handles the rest
+5. Push - the workflow in `.github/workflows/deploy.yml` handles the rest
 
 ## Future: replacing cookies
 
