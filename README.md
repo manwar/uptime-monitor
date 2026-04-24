@@ -39,12 +39,12 @@ hugo server -D
 
 ## Deploy to GitHub Pages
 
-1. Create a new GitHub repository (e.g. `uptime-tracker`)
+1. Create a new GitHub repository (e.g. `uptime-monitor`)
 2. Push this project to the `main` branch
 3. In repo **Settings → Pages**, set source to **GitHub Actions**
 4. Update `baseURL` in `hugo.toml` to match your Pages URL:
    ```
-   https://<your-username>.github.io/uptime-tracker/
+   https://<your-username>.github.io/uptime-monitor/
    ```
 5. Push — the workflow in `.github/workflows/deploy.yml` handles the rest
 
