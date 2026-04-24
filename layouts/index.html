@@ -1,0 +1,91 @@
+{{ define "main" }}
+<div class="terminal-frame">
+  <div class="terminal-header">
+    <span class="dot red"></span>
+    <span class="dot yellow"></span>
+    <span class="dot green"></span>
+    <span class="terminal-title">Uptime Monitor</span>
+  </div>
+
+  <main class="terminal-body">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-label">[ MONITORING ]</div>
+      <h1 class="hero-site">{{ .Site.Params.siteName }}</h1>
+      <div class="hero-url">{{ .Site.Params.targetURL }}</div>
+    </section>
+
+    <!-- Live Status -->
+    <section class="status-panel">
+      <div class="status-indicator" id="statusIndicator">
+        <div class="pulse-ring"></div>
+        <div class="pulse-dot"></div>
+      </div>
+      <div class="status-info">
+        <div class="status-label" id="statusLabel">CHECKING...</div>
+        <div class="status-meta" id="statusMeta">Probing endpoint...</div>
+      </div>
+      <div class="status-latency" id="statusLatency">—</div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+      <div class="stat">
+        <div class="stat-value" id="statUptime">—</div>
+        <div class="stat-key">UPTIME %</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-value" id="statChecks">—</div>
+        <div class="stat-key">TOTAL CHECKS</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-value" id="statOutages">—</div>
+        <div class="stat-key">OUTAGES</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-value" id="statAvgLatency">—</div>
+        <div class="stat-key">AVG MS</div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="timeline-section">
+      <div class="section-header">
+        <span class="section-label">[ HISTORY ]</span>
+        <span class="section-meta" id="timelineRange">last 90 checks</span>
+      </div>
+      <div class="timeline-grid" id="timelineGrid">
+        <!-- filled by JS -->
+      </div>
+      <div class="timeline-legend">
+        <span class="legend-item up">■ UP</span>
+        <span class="legend-item down">■ DOWN</span>
+        <span class="legend-item unknown">■ UNKNOWN</span>
+      </div>
+    </section>
+
+    <!-- Log -->
+    <section class="log-section">
+      <div class="section-header">
+        <span class="section-label">[ EVENT LOG ]</span>
+        <button class="clear-btn" id="clearBtn">[ CLEAR DATA ]</button>
+      </div>
+      <div class="log-container" id="logContainer">
+        <div class="log-entry placeholder">Waiting for first check result...</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="terminal-footer">
+      <span>Next check in <span id="countdown">{{ .Site.Params.checkInterval }}</span>s</span>
+      <span class="footer-sep">|</span>
+      <span>Data stored in cookies · {{ .Site.Params.cookieDays }} day retention</span>
+      <span class="footer-sep">|</span>
+      <span>Built with <a href="https://gohugo.io" target="_blank">Hugo</a></span>
+    </footer>
+  </main>
+</div>
+{{ end }}

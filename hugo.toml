@@ -1,0 +1,14 @@
+baseURL = "https://manwar.github.io/uptime-tracker/"
+languageCode = "en-gb"
+title = "manwar.org — Uptime Monitor"
+
+[params]
+  targetURL = "https://manwar.org"
+  siteName = "manwar.org"
+  checkInterval = 60
+  cookieDays = 90
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
